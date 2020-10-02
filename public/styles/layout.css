@@ -17,9 +17,56 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ nav{
+  font-family: 'Bungee', cursive;
+ }
+
+ main{
+  padding: 160px;
+  margin-top: 2000px;
+  height: 1500px;
+ }
+
+
+ .header{
+  overflow: hidden;
+  position: fixed;
+  background-color: rgb(0, 48, 110);
+  color: white;
+  font-size: 30px;
+  top: 0;
+  width: 100%
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tophead {
+
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 90%;
+}
+div a:link{
+  text-decoration: none;
+  color: white;
+}
+
+.container{
+  margin: auto;
+  width: 90%;
+}
+
+.bottom{
+  padding: 10px;
+}
+
