@@ -14,7 +14,7 @@ html {
  * Global layout stuff
  */
 
-body {
+ body {
   color: #545149;
   background-color: #f4f1ec;
   font-family: 'Source Sans Pro', sans-serif;
@@ -23,16 +23,63 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
  nav{
   font-family: 'Bungee', cursive;
  }
 
- main{
+main{
   padding: 160px;
   margin-top: 2000px;
   height: 1500px;
- }
+}
 
+.header{
+  overflow: hidden;
+  position: fixed;
+  color: black;
+  background-color: orange;
+  font-size: 20px;
+  top: 0;
+  width: 100%
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tophead {
+
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 90%;
+}
+div a:link{
+  text-decoration: none;
+  color: white;
+}
+
+.container{
+  margin: auto;
+  width: 90%;
+}
+
+.bottom{
+  padding: 10px;
+}
+
+
+
+@media screen and (min-width:768px){
+
+
+  body {
+    color: #545149;
+    background-color: #f4f1ec;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
 
  .header{
   overflow: hidden;
@@ -70,3 +117,4 @@ div a:link{
   padding: 10px;
 }
 
+}

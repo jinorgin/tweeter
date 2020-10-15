@@ -3,7 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
@@ -17,6 +17,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/public/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -26,7 +27,7 @@
           <nav class="menu">
             <span><strong>Tweeter</strong></span>
               <div>
-                  <a class="menu-link" href="#new-tweet"><p>Write a new tweet &darr;</p></a>
+                  <a class="menu-link" href="#new-tweet">Write a new tweet &darr;</a>
               </div>
           </nav>
  
@@ -55,7 +56,7 @@
         <div>
           <button type="submit" id="tweet">Tweet</button>
           <div class="right">
-          <output name="counter" class="counter" for="tweet-text">140</output>
+          <output name="counter" id="counter">140</output>
         </div>
         </div>
       </form>
@@ -66,11 +67,10 @@
     <article class="tweet">
       <h4>Patrick Ster</h4>
       <div>
-        <textarea name="text" id="tweet-text" disabled>Spongebob is my childhood!</textarea>
+        <p id="tweet-text" disabled>Spongebob is my childhood!</p>
       </div>
         <div>
           <div class="right">
-          <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </div>
     </article>
@@ -80,11 +80,10 @@
       <article class="tweet">
         <h4>Sandy Bleach</h4>
         <div>
-          <textarea name="text" id="tweet-text" disabled>Good morning!</textarea>
+          <p id="tweet-text" disabled>Good morning!</p>
         </div>
           <div>
             <div class="right">
-            <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </div>
       </article>
