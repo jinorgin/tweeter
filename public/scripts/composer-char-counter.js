@@ -2,6 +2,9 @@ $(document).ready(function() {
     
     //option 1
     
+
+    //This function should count 140 to 0 if text is reached the limit.
+    //For some reason, it doesn't work.
     let maxLength = 140;
     $('textarea').on("keyup",function(){
         let length = $(this).val().length;
